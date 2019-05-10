@@ -1,16 +1,16 @@
 class Basket():
-    def init(self):
+    def __init__(self):
         self.items = []
 
 class Goods():
-    def init(self, name, value):
+    def __init__(self, name, value):
         self.name = name
         self.value = value
 
 
 class Coca_Cola(Goods):
-    def init(self):
-        super().init(name='Кока Кола', value=49)
+    def __init__(self):
+        super().__init__(name='Кока Кола', value=49)
 
     def get_good(self, basket):
         coca_cola = Coca_Cola()
